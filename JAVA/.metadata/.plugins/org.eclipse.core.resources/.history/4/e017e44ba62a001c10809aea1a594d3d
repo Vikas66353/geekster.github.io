@@ -1,0 +1,42 @@
+package assignment;
+import java.io.*;
+class question2
+{
+	public static void main(String arg[])throws IOException
+	{
+		int ch;
+		InputStreamReader ir=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(ir);
+		System.out.println("Find the bonus for the employee code...");
+		System.out.print("Employee Code\n100\n200\n300\n400\n");
+		System.out.print("Please choose Employee Code=");
+		ch=Integer.parseInt(br.readLine());
+		switch(ch)
+		{
+			case 100:
+			{
+				System.out.println("\nEmployee Code 100 Bonus=5");
+				break;
+			}
+			case 200:
+			{
+				System.out.println("Employee Code 200 Bonus=1");
+				break;
+			}
+			case 300:
+			{
+				System.out.println("Employee Code 300 Bonus=2");
+				break;
+			}
+			case 400:
+			{
+				System.out.println("Employee Code 400 Bonus=25");
+				break;
+			}
+			default:
+			{
+				System.out.println("Sorry! you choose wrong option");
+			}
+		}
+	}
+}

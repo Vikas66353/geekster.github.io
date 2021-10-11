@@ -1,0 +1,38 @@
+package assignment;
+import java.io.*;
+class prime
+{
+	public static void main(String args[])throws IOException
+	{
+		InputStreamReader ir=new InputStreamReader(System.in);
+		BufferedReader br=new BufferedReader(ir);
+		int i,a=2,b=0,flag=0;
+		System.out.println("Please enter a number=");
+		i=Integer.parseInt(br.readLine());
+		while(a<i/2)
+		{
+			if(i%a==0)
+			{
+				flag=1;
+				break;
+			}
+			if(i==1)
+			{
+				System.out.println("1 is neither prime nor composite.");
+			}
+			else
+			{
+				if (flag==0)
+				{
+					System.out.println("this is prime number");
+				}
+				else
+				if(flag==1)
+				{
+					System.out.println("this is not prime nuber");
+				}
+			}
+			a++;
+		}
+	}
+}
